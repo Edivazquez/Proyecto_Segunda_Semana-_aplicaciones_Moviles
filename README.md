@@ -43,7 +43,7 @@ val num1 = 20
 ```
 
 ### Ejercicio 3: Incremento y Decremento
-Declara una variable numérica y:
+# Declara una variable numérica y:
 
 Incrementa su valor en 1 y muestra el resultado Decrementa su valor en 1 y muestra el resultado
 ```sql
@@ -53,7 +53,7 @@ var contador = 5
 ```
 
 ### Ejercicio 4: Operadores de Asignación Compuesta
-Declara una variable numérica y utiliza operadores de asignación compuesta para:
+# Declara una variable numérica y utiliza operadores de asignación compuesta para:
 
 Sumar 5 Multiplicar por 2 Restar 3 Dividir entre 4 Muestra el resultado después de cada operación.
 ```sql
@@ -68,7 +68,7 @@ var numero = 10
   println("Después de dividir entre 4: $numero")
 ```
 ### Ejercicio 5: Comparaciones
-Declara dos variables numéricas y utiliza operadores de comparación para:
+# Declara dos variables numéricas y utiliza operadores de comparación para:
 
 Verificar si son iguales Verificar si la primera es mayor que la segunda Verificar si la segunda es menor o igual que la primera Muestra el resultado de cada comparación.
 
@@ -81,7 +81,7 @@ val a = 15
 ```
 
 ### Ejercicio 6: Operaciones con Strings
-Declara dos variables de tipo String y:
+# Declara dos variables de tipo String y:
 
 Concaténalas usando el operador + Compara si son iguales Obtén la longitud de ambas y suma los resultados Muestra los resultados.
 
@@ -94,7 +94,7 @@ val str1 = "Hola"
 ```
 
 ### Ejercicio 7: Cálculo de Descuento
-Crea variables para el precio de un producto y el porcentaje de descuento. Calcula el precio final después del descuento. Muestra el precio original, el descuento y el precio final.
+# Crea variables para el precio de un producto y el porcentaje de descuento. Calcula el precio final después del descuento. Muestra el precio original, el descuento y el precio final.
 
 ```sql
 val precioOriginal = 100.0
@@ -108,7 +108,7 @@ val precioOriginal = 100.0
 ```
 
 ### Ejercicio 8: Conversión de Tipos
-Declara una variable de tipo String que contenga un número. Conviértela a Int y luego a Double. Realiza una operación aritmética con cada tipo y muestra los resultados.
+# Declara una variable de tipo String que contenga un número. Conviértela a Int y luego a Double. Realiza una operación aritmética con cada tipo y muestra los resultados.
 ```sql
   val numeroString = "42"
   val numeroInt = numeroString.toInt()
@@ -119,7 +119,7 @@ Declara una variable de tipo String que contenga un número. Conviértela a Int 
 ```
 
 ### Ejercicio 9: Operaciones Booleanas
-Crea tres variables booleanas y utiliza operadores lógicos (AND, OR, NOT) para combinarlas. Muestra el resultado de al menos tres combinaciones diferentes.
+# Crea tres variables booleanas y utiliza operadores lógicos (AND, OR, NOT) para combinarlas. Muestra el resultado de al menos tres combinaciones diferentes.
 ```sql
 val p = true
   val q = false
@@ -131,7 +131,7 @@ val p = true
   println("(p OR q) AND r: ${(p || q) && r}")
 ```
 ### Ejercicio 10: Cálculo de IMC
-Crea variables para el peso (en kg) y la altura (en metros) de una persona. Calcula el Índice de Masa Corporal (IMC) usando la fórmula: IMC = peso / (altura * altura) Muestra el resultado del IMC.
+# Crea variables para el peso (en kg) y la altura (en metros) de una persona. Calcula el Índice de Masa Corporal (IMC) usando la fórmula: IMC = peso / (altura * altura) Muestra el resultado del IMC.
 ```sql
  val peso = 70.0 // kg
   val altura = 1.75 // metros
@@ -143,7 +143,7 @@ Crea variables para el peso (en kg) y la altura (en metros) de una persona. Calc
 ## Sesión 2: Fundamentos de programación
 
 ### Ejercicio 1: Calculadora de volumen de cilindro
-Crea una función que calcule el volumen de un cilindro dado su radio y altura.
+# Crea una función que calcule el volumen de un cilindro dado su radio y altura.
 ```sql
 import kotlin.math.PI
 
@@ -157,7 +157,7 @@ fun main() {
 ```
 
 ### Ejercicio 2: Verificador de número primo
-Implementa una función que determine si un número es primo.
+# Implementa una función que determine si un número es primo.
 ```sql
 
 fun esPrimo(numero: Int): Boolean {
@@ -175,7 +175,7 @@ fun main() {
 ```
 
 ### Ejercicio 3: Validador de email con función local
-Desarrolla una función que valide una dirección de email utilizando una función local.
+# Desarrolla una función que valide una dirección de email utilizando una función local.
 ```sql
  fun validarEmail(email: String): Boolean {
     fun tieneArrobaYPunto(str: String): Boolean {
@@ -191,7 +191,7 @@ fun main() {
 }
 ```
 ### Ejercicio 4: Clasificador de edades usando when
-Crea una función que clasifique a una persona según su edad utilizando when.
+# Crea una función que clasifique a una persona según su edad utilizando when.
 ```sql
 fun clasificarEdad(edad: Int) {
     when (edad) {
@@ -211,7 +211,7 @@ fun main() {
 ```
 
 ### Ejercicio 5: Imprimir números pares en un rango
-Utiliza un ciclo for para imprimir los números pares en un rango dado.
+# Utiliza un ciclo for para imprimir los números pares en un rango dado.
 ```sql
 fun imprimirPares(inicio: Int, fin: Int) {
     for (i in inicio..fin step 2) {
@@ -226,7 +226,7 @@ fun main() {
 }
 ```
 ### Ejercicio 6: Contar vocales en una lista de palabras
-Usa una lista y un ciclo para contar las vocales en una lista de palabras.
+# Usa una lista y un ciclo para contar las vocales en una lista de palabras.
 
 ```sql
 un contarVocales(palabras: List<String>): Int {
@@ -246,7 +246,7 @@ fun main() {
 }
 ```
 ### Ejercicio 7: Diccionario de sinónimos
-Crea un mapa de sinónimos y una función para obtener sinónimos de una palabra.
+# Crea un mapa de sinónimos y una función para obtener sinónimos de una palabra.
 
 ```sql
 val sinonimos = mapOf(
