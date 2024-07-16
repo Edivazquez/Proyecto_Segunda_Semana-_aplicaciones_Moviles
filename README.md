@@ -1,4 +1,4 @@
-# Proyecto_Segunda_Semana-_aplicaciones_Moviles
+# Proyecto_Segunda_Semana-_Aplicaciones_Moviles
 ## Autor: Edgar Vazquez Ramirez
 
 La primer semana comenzamos con la definicion de Kotlin e hicimos algunos ejercicios desde la plataforma 
@@ -6,7 +6,7 @@ La primer semana comenzamos con la definicion de Kotlin e hicimos algunos ejerci
 ![image](https://github.com/user-attachments/assets/82616d24-85f2-4bb6-975c-6b47dff0b6e4)
 
 
-## # 1: ¿Qué es Kotlin?
+## 1: ¿Qué es Kotlin?
 Declara variables para representar la información de un producto:
 
 Nombre del producto (String)
@@ -140,6 +140,6 @@ Crea variables para el peso (en kg) y la altura (en metros) de una persona. Calc
   println("IMC: ${"%.2f".format(imc)}")
 ```
 
-### Sesión 2: Fundamentos de programación
+## Sesión 2: Fundamentos de programación
 
 
