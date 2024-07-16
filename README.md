@@ -68,9 +68,7 @@ var numero = 10
   println("Después de dividir entre 4: $numero")
 ```
 ### Ejercicio 5: Comparaciones
-# Declara dos variables numéricas y utiliza operadores de comparación para:
-
-Verificar si son iguales Verificar si la primera es mayor que la segunda Verificar si la segunda es menor o igual que la primera Muestra el resultado de cada comparación.
+# Declara dos variables numéricas y utiliza operadores de comparación para: Verificar si son iguales Verificar si la primera es mayor que la segunda Verificar si la segunda es menor o igual que la primera Muestra el resultado de cada comparación.
 
 ```sql
 val a = 15
