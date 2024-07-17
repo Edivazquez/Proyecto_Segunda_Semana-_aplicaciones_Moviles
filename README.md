@@ -570,3 +570,82 @@ fun main() {
     verificarHabilidades(triatleta)
 }
 ```
+# Sesión 5: Programación funcional
+```sql
+
+data class Libro(val titulo: String, val autor: String, val añoPublicación: Int)
+fun main(){
+    val libro1 = Libro("1984", "George Orwell", 1949)
+    val libro2 = Libro("Cien años de Soledad", "Gabriel García Márquez", 1967)
+    val libro3 = libro1.copy(titulo = "Rebelion de la granja")
+    
+    val libros = listOf(libro1, libro2, libro3)
+    
+    println(libro1 == libro2)
+    println(libro1 == libro1.copy())
+    
+    libros.forEach {println(it)}
+}
+```
+
+## 5. Companion Object
+```sql
+class Contador{
+    companion object{
+        private var contadorGlobal = 0 
+        
+        fun obtenerContadorGlobal(): Int {
+            return contadorGlobal
+        }
+    }
+    
+    init {
+        contadorGlobal++
+    }
+}
+fun main(){
+    println(Contador.obtenerContadorGlobal())
+    val contador1 = Contador()
+    println(Contador.obtenerContadorGlobal())
+    
+    val contador2 = Contador()
+    val contador3 = Contador()
+    println(Contador.obtenerContadorGlobal())
+}
+```
+6. Herencia Múltiple con Interfaces
+Crea dos interfaces Nadador y Corredor con métodos nadar() y correr() respectivamente. Luego, crea una clase Triatleta que implemente ambas interfaces. Finalmente, crea una función que reciba un objeto y verifique si puede nadar, correr o ambos.
+
+```sql
+interface Nadador {
+    fun nadar()
+}
+
+interface Corredor {
+    fun correr()
+}
+
+class Triatleta : Nadador, Corredor {
+    override fun nadar() {
+        println("El triatleta está nadando")
+    }
+    
+    override fun correr() {
+        println("El triatleta está corriendo")
+    }
+}
+
+fun verificarHabilidades(obj: Any) {
+    if (obj is Nadador) {
+        obj.nadar()
+    }
+    if (obj is Corredor) {
+        obj.correr()
+    }
+}
+
+fun main() {
+    val triatleta = Triatleta()
+    verificarHabilidades(triatleta)
+}
+```
