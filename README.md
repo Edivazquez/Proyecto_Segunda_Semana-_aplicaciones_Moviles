@@ -1,5 +1,5 @@
 # Proyecto_Segunda_Semana-_Aplicaciones_Moviles
-## Autor: Edgar Vazquez Ramirez. ![image](https://github.com/user-attachments/assets/57078cf5-cd85-4c9f-8a2f-cbba805cdc03)
+## Autor: ![image](https://github .com/user-attachments/assets/57078cf5-cd85-4c9f-8a2f-cbba805cdc03)Edgar Vazquez Ramirez. 
  
 
 
