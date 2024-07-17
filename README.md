@@ -649,3 +649,10 @@ fun main() {
     verificarHabilidades(triatleta)
 }
 ```
+## Crea una función literal que calcule el cuadrado de un número y úsala para calcular el cuadrado de 5.
+```sql
+val cuadrado = {x: Int -> x * x}
+fun main (){
+    println(cuadrado(5))
+}
+```
