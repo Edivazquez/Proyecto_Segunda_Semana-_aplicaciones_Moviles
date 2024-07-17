@@ -1,8 +1,8 @@
-# Proyecto_Segunda_Semana-_Aplicaciones_Moviles
-## Autor: ![image](https://github .com/user-attachments/assets/57078cf5-cd85-4c9f-8a2f-cbba805cdc03)Edgar Vazquez Ramirez. 
+<# Proyecto_Segunda_Semana-_Aplicaciones_Moviles
+## ![image](https://github .com/user-attachments/assets/57078cf5-cd85-4c9f-8a2f-cbba805cdc03)  Autor: Edgar Vazquez Ramirez. 
  
 
-
+ 
 La primera semana comenzamos con la definición de Kotlin e hicimos algunos ejercicios desde la plataforma. 
 
 ![image](https://github.com/user-attachments/assets/82616d24-85f2-4bb6-975c-6b47dff0b6e4)
