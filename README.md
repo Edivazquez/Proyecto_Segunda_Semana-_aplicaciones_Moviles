@@ -1,4 +1,4 @@
-<# Proyecto_Segunda_Semana-_Aplicaciones_Moviles 
+# Proyecto_Segunda_Semana-_Aplicaciones_Moviles 
 
 ## Autor: Edgar Vazquez Ramirez. 
  
