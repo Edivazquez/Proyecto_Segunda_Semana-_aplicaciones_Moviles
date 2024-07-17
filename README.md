@@ -1,7 +1,7 @@
 # Proyecto_Segunda_Semana-_Aplicaciones_Moviles
 ## Autor: Edgar Vazquez Ramirez
 
-La primer semana comenzamos con la definicion de Kotlin e hicimos algunos ejercicios desde la plataforma 
+La primera semana comenzamos con la definición de Kotlin e hicimos algunos ejercicios desde la plataforma. 
 
 ![image](https://github.com/user-attachments/assets/82616d24-85f2-4bb6-975c-6b47dff0b6e4)
 
@@ -392,5 +392,181 @@ fun main() {
     persona.saludar()
 }
 ```
+## Sesion-04
 
+1. Herencia y Polimorfismo
+Crea una clase base Animal con un método hacerSonido(). Luego, crea dos clases derivadas Perro y Gato que hereden de Animal y sobrescriban el método hacerSonido(). Finalmente, crea una función que reciba un Animal y llame a su método hacerSonido().
 
+```sql
+open class Animal {
+    open fun hacerSonido() {
+        println("El animal hace un sonido")
+    }
+}
+
+class Perro : Animal() {
+    override fun hacerSonido() {
+        println("El perro ladra")
+    }
+}
+
+class Gato : Animal() {
+    override fun hacerSonido() {
+        println("El gato maulla")
+    }
+}
+
+fun hacerSonar(animal: Animal) {
+    animal.hacerSonido()
+}
+
+fun main() {
+    val perro = Perro()
+    val gato = Gato()
+    
+    hacerSonar(perro) // Imprime: El perro ladra
+    hacerSonar(gato)  // Imprime: El gato maulla
+}
+```
+
+2. Clases Abstractas
+Crea una clase abstracta Figura con un método abstracto calcularArea(). Luego, implementa dos clases concretas Circulo y Rectangulo que hereden de Figura e implementen el método calcularArea().
+
+```sql
+abstract class Figura {
+    abstract fun calcularArea(): Double
+}
+
+class Circulo(private val radio: Double) : Figura() {
+    override fun calcularArea(): Double {
+        return Math.PI * radio * radio
+    }
+}
+
+class Rectangulo(private val base: Double, private val altura: Double) : Figura() {
+    override fun calcularArea(): Double {
+        return base * altura
+    }
+}
+
+fun main() {
+    val circulo = Circulo(5.0)
+    val rectangulo = Rectangulo(4.0, 6.0)
+    
+    println("Área del círculo: ${circulo.calcularArea()}")
+    println("Área del rectángulo: ${rectangulo.calcularArea()}")
+```
+3. Interfaces
+Crea una interfaz Volador con un método volar(). Luego, implementa esta interfaz en las clases Ave y Avion. Crea una función que reciba un Volador y llame a su método volar().
+```sql
+interface Volador {
+    fun volar()
+}
+
+class Ave : Volador {
+    override fun volar() {
+        println("El ave vuela moviendo sus alas")
+    }
+}
+
+class Avion : Volador {
+    override fun volar() {
+        println("El avión vuela usando motores")
+    }
+}
+
+fun hacerVolar(volador: Volador) {
+    volador.volar()
+}
+
+fun main() {
+    val ave = Ave()
+    val avion = Avion()
+    
+    hacerVolar(ave)   // Imprime: El ave vuela moviendo sus alas
+    hacerVolar(avion) // Imprime: El avión vuela usando motores
+}
+```
+4. Data Classes
+Crea una data class Libro con propiedades para título, autor y año de publicación. Luego, crea una lista de libros y utiliza las funciones generadas automáticamente para copiar un libro y comparar dos libros.
+
+```sql
+data class Libro(val titulo: String, val autor: String, val anioPublicacion: Int)
+
+fun main() {
+    val libro1 = Libro("1984", "George Orwell", 1949)
+    val libro2 = Libro("Cien años de soledad", "Gabriel García Márquez", 1967)
+    val libro3 = libro1.copy(titulo = "Rebelión en la granja")
+    
+    val libros = listOf(libro1, libro2, libro3)
+    
+    println(libro1 == libro2) // false
+    println(libro1 == libro1.copy()) // true
+    
+    libros.forEach { println(it) }
+}
+```
+5. Companion Object
+Crea una clase Contador con un companion object que mantenga un contador global de instancias creadas. Cada vez que se cree una nueva instancia de Contador, el contador global debe incrementarse.
+```sql
+class Contador {
+    companion object {
+        private var contadorGlobal = 0
+        
+        fun obtenerContadorGlobal(): Int {
+            return contadorGlobal
+        }
+    }
+    
+    init {
+        contadorGlobal++
+    }
+}
+
+fun main() {
+    println(Contador.obtenerContadorGlobal()) // 0
+    
+    val contador1 = Contador()
+    println(Contador.obtenerContadorGlobal()) // 1
+    
+    val contador2 = Contador()
+    val contador3 = Contador()
+    println(Contador.obtenerContadorGlobal()) // 3
+}
+```
+6. Herencia Múltiple con Interfaces
+Crea dos interfaces Nadador y Corredor con métodos nadar() y correr() respectivamente. Luego, crea una clase Triatleta que implemente ambas interfaces. Finalmente, crea una función que reciba un objeto y verifique si puede nadar, correr o ambos.
+
+```sql
+interface Nadador {
+    fun nadar()
+}
+
+interface Corredor {
+    fun correr()
+}
+
+class Triatleta : Nadador, Corredor {
+    override fun nadar() {
+        println("El triatleta está nadando")
+    }
+    
+    override fun correr() {
+        println("El triatleta está corriendo")
+    }
+}
+
+fun verificarHabilidades(obj: Any) {
+    if (obj is Nadador) {
+        obj.nadar()
+    }
+    if (obj is Corredor) {
+        obj.correr()
+    }
+}
+
+fun main() {
+    val triatleta = Triatleta()
+    verificarHabilidades(triatleta)
+}
+```
