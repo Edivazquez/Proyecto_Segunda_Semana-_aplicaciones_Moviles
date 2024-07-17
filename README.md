@@ -43,9 +43,8 @@ val num1 = 20
 ```
 
 ### Ejercicio 3: Incremento y Decremento
-# Declara una variable numérica y:
+# Declara una variable numérica y: Incrementa su valor en 1 y muestra el resultado Decrementa su valor en 1 y muestra el resultado
 
-Incrementa su valor en 1 y muestra el resultado Decrementa su valor en 1 y muestra el resultado
 ```sql
 var contador = 5
   println("Incremento: ${++contador}")
@@ -53,9 +52,8 @@ var contador = 5
 ```
 
 ### Ejercicio 4: Operadores de Asignación Compuesta
-# Declara una variable numérica y utiliza operadores de asignación compuesta para:
+# Declara una variable numérica y utiliza operadores de asignación compuesta para: Sumar 5 Multiplicar por 2 Restar 3 Dividir entre 4 Muestra el resultado después de cada operación.
 
-Sumar 5 Multiplicar por 2 Restar 3 Dividir entre 4 Muestra el resultado después de cada operación.
 ```sql
 var numero = 10
   numero += 5
@@ -67,6 +65,7 @@ var numero = 10
   numero /= 4
   println("Después de dividir entre 4: $numero")
 ```
+
 ### Ejercicio 5: Comparaciones
 # Declara dos variables numéricas y utiliza operadores de comparación para: Verificar si son iguales Verificar si la primera es mayor que la segunda Verificar si la segunda es menor o igual que la primera Muestra el resultado de cada comparación.
 
@@ -79,9 +78,7 @@ val a = 15
 ```
 
 ### Ejercicio 6: Operaciones con Strings
-# Declara dos variables de tipo String y:
-
-Concaténalas usando el operador + Compara si son iguales Obtén la longitud de ambas y suma los resultados Muestra los resultados.
+# Declara dos variables de tipo String y:Concaténalas usando el operador + Compara si son iguales Obtén la longitud de ambas y suma los resultados Muestra los resultados.
 
 ```sql
 val str1 = "Hola"
@@ -107,6 +104,7 @@ val precioOriginal = 100.0
 
 ### Ejercicio 8: Conversión de Tipos
 # Declara una variable de tipo String que contenga un número. Conviértela a Int y luego a Double. Realiza una operación aritmética con cada tipo y muestra los resultados.
+
 ```sql
   val numeroString = "42"
   val numeroInt = numeroString.toInt()
@@ -130,6 +128,7 @@ val p = true
 ```
 ### Ejercicio 10: Cálculo de IMC
 # Crea variables para el peso (en kg) y la altura (en metros) de una persona. Calcula el Índice de Masa Corporal (IMC) usando la fórmula: IMC = peso / (altura * altura) Muestra el resultado del IMC.
+
 ```sql
  val peso = 70.0 // kg
   val altura = 1.75 // metros
@@ -138,10 +137,9 @@ val p = true
   println("IMC: ${"%.2f".format(imc)}")
 ```
 
-## Sesión 2: Fundamentos de programación
+### Sesión 2: Fundamentos de programación
 
-### Ejercicio 1: Calculadora de volumen de cilindro
-# Crea una función que calcule el volumen de un cilindro dado su radio y altura.
+## Ejercicio 1: Calculadora de volumen de cilindro: Crea una función que calcule el volumen de un cilindro dado su radio y altura.
 ```sql
 import kotlin.math.PI
 
@@ -190,6 +188,7 @@ fun main() {
 ```
 ### Ejercicio 4: Clasificador de edades usando when
 # Crea una función que clasifique a una persona según su edad utilizando when.
+
 ```sql
 fun clasificarEdad(edad: Int) {
     when (edad) {
@@ -210,6 +209,7 @@ fun main() {
 
 ### Ejercicio 5: Imprimir números pares en un rango
 # Utiliza un ciclo for para imprimir los números pares en un rango dado.
+
 ```sql
 fun imprimirPares(inicio: Int, fin: Int) {
     for (i in inicio..fin step 2) {
@@ -263,9 +263,9 @@ fun main() {
 }
 ```
 
-## Ejercicios de Kotlin: Clases, Objetos y Constructores
+### Ejercicios de Kotlin: Clases, Objetos y Constructores
 
-### Ejercicio 1: Clase Libro
+# Ejercicio 1: Clase Libro
 
 ```sql
 Crea una clase Libro con los atributos titulo, autor y añoPublicacion. Incluye un constructor primario y un método para imprimir la información del libro.
@@ -281,7 +281,7 @@ fun main() {
 }
 ```
 ### Ejercicio 2: Clase Cuenta Bancaria
-Diseña una clase CuentaBancaria con un atributo privado saldo. Incluye métodos para depositar, retirar y consultar saldo.
+# Diseña una clase CuentaBancaria con un atributo privado saldo. Incluye métodos para depositar, retirar y consultar saldo.
 
 ```sql
 class CuentaBancaria(saldoInicial: Double) {
@@ -313,7 +313,7 @@ fun main() {
 ```
 
 ### Ejercicio 3: Clase con Constructor Secundario
-Crea una clase Rectangulo con atributos ancho y alto. Incluye un constructor primario y un constructor secundario que inicialice ambos valores con el mismo número.
+# Crea una clase Rectangulo con atributos ancho y alto. Incluye un constructor primario y un constructor secundario que inicialice ambos valores con el mismo número.
 
 ```sql
 class Rectangulo(val ancho: Double, val alto: Double) {
@@ -331,7 +331,8 @@ fun main() {
 }
 ```
 ### Ejercicio 4: Getters y Setters Personalizados
-Implementa una clase Temperatura con un atributo en Celsius. Incluye getters y setters personalizados para obtener y establecer la temperatura en Fahrenheit.
+#Implementa una clase Temperatura con un atributo en Celsius. Incluye getters y setters personalizados para obtener y establecer la temperatura en Fahrenheit.
+
 ```sql
 class Temperatura(celsius: Double) {
     var celsius = celsius
@@ -357,7 +358,7 @@ fun main() {
 ```
 
 ### Ejercicio 5: Clase con Propiedades Lazy
-Crea una clase Calculadora con una propiedad pi que se inicialice de manera perezosa (lazy) y un método para calcular el área de un círculo.
+# Crea una clase Calculadora con una propiedad pi que se inicialice de manera perezosa (lazy) y un método para calcular el área de un círculo.
 
 ```sql
 class Calculadora {
@@ -367,7 +368,7 @@ class Calculadora {
     }
 
     fun areaCirculo(radio: Double): Double {
-        return pi * radio * radio
+       #  return pi * radio * radio
     }
 }
 
@@ -378,7 +379,7 @@ fun main() {
 }
 ```
 ### Ejercicio 6: Clase con Métodos de Extensión
-Define una clase Persona con propiedades nombre y edad. Luego, crea un método de extensión para imprimir un saludo personalizado.
+# Define una clase Persona con propiedades nombre y edad. Luego, crea un método de extensión para imprimir un saludo personalizado.
 
 ```sql
 class Persona(val nombre: String, val edad: Int)
@@ -394,8 +395,8 @@ fun main() {
 ```
 ## Sesion-04
 
-1. Herencia y Polimorfismo
-Crea una clase base Animal con un método hacerSonido(). Luego, crea dos clases derivadas Perro y Gato que hereden de Animal y sobrescriban el método hacerSonido(). Finalmente, crea una función que reciba un Animal y llame a su método hacerSonido().
+### 1. Herencia y Polimorfismo
+# Crea una clase base Animal con un método hacerSonido(). Luego, crea dos clases derivadas Perro y Gato que hereden de Animal y sobrescriban el método hacerSonido(). Finalmente, crea una función que reciba un Animal y llame a su método hacerSonido().
 
 ```sql
 open class Animal {
@@ -429,8 +430,8 @@ fun main() {
 }
 ```
 
-2. Clases Abstractas
-Crea una clase abstracta Figura con un método abstracto calcularArea(). Luego, implementa dos clases concretas Circulo y Rectangulo que hereden de Figura e implementen el método calcularArea().
+### 2. Clases Abstractas
+# Crea una clase abstracta Figura con un método abstracto calcularArea(). Luego, implementa dos clases concretas Circulo y Rectangulo que hereden de Figura e implementen el método calcularArea().
 
 ```sql
 abstract class Figura {
@@ -456,8 +457,9 @@ fun main() {
     println("Área del círculo: ${circulo.calcularArea()}")
     println("Área del rectángulo: ${rectangulo.calcularArea()}")
 ```
-3. Interfaces
-Crea una interfaz Volador con un método volar(). Luego, implementa esta interfaz en las clases Ave y Avion. Crea una función que reciba un Volador y llame a su método volar().
+### 3. Interfaces
+# Crea una interfaz Volador con un método volar(). Luego, implementa esta interfaz en las clases Ave y Avion. Crea una función que reciba un Volador y llame a su método volar().
+
 ```sql
 interface Volador {
     fun volar()
@@ -487,8 +489,8 @@ fun main() {
     hacerVolar(avion) // Imprime: El avión vuela usando motores
 }
 ```
-4. Data Classes
-Crea una data class Libro con propiedades para título, autor y año de publicación. Luego, crea una lista de libros y utiliza las funciones generadas automáticamente para copiar un libro y comparar dos libros.
+### 4. Data Classes
+# Crea una data class Libro con propiedades para título, autor y año de publicación. Luego, crea una lista de libros y utiliza las funciones generadas automáticamente para copiar un libro y comparar dos libros.
 
 ```sql
 data class Libro(val titulo: String, val autor: String, val anioPublicacion: Int)
@@ -506,8 +508,9 @@ fun main() {
     libros.forEach { println(it) }
 }
 ```
-5. Companion Object
-Crea una clase Contador con un companion object que mantenga un contador global de instancias creadas. Cada vez que se cree una nueva instancia de Contador, el contador global debe incrementarse.
+### 5. Companion Object
+# Crea una clase Contador con un companion object que mantenga un contador global de instancias creadas. Cada vez que se cree una nueva instancia de Contador, el contador global debe incrementarse.
+
 ```sql
 class Contador {
     companion object {
@@ -534,8 +537,8 @@ fun main() {
     println(Contador.obtenerContadorGlobal()) // 3
 }
 ```
-6. Herencia Múltiple con Interfaces
-Crea dos interfaces Nadador y Corredor con métodos nadar() y correr() respectivamente. Luego, crea una clase Triatleta que implemente ambas interfaces. Finalmente, crea una función que reciba un objeto y verifique si puede nadar, correr o ambos.
+### 6. Herencia Múltiple con Interfaces
+# Crea dos interfaces Nadador y Corredor con métodos nadar() y correr() respectivamente. Luego, crea una clase Triatleta que implemente ambas interfaces. Finalmente, crea una función que reciba un objeto y verifique si puede nadar, correr o ambos.
 
 ```sql
 interface Nadador {
@@ -571,6 +574,7 @@ fun main() {
 }
 ```
 # Sesión 5: Programación funcional
+
 ```sql
 
 data class Libro(val titulo: String, val autor: String, val añoPublicación: Int)
@@ -588,7 +592,8 @@ fun main(){
 }
 ```
 
-## 5. Companion Object
+### 5. Companion Object
+
 ```sql
 class Contador{
     companion object{
@@ -613,8 +618,8 @@ fun main(){
     println(Contador.obtenerContadorGlobal())
 }
 ```
-6. Herencia Múltiple con Interfaces
-Crea dos interfaces Nadador y Corredor con métodos nadar() y correr() respectivamente. Luego, crea una clase Triatleta que implemente ambas interfaces. Finalmente, crea una función que reciba un objeto y verifique si puede nadar, correr o ambos.
+### 6. Herencia Múltiple con Interfaces
+# Crea dos interfaces Nadador y Corredor con métodos nadar() y correr() respectivamente. Luego, crea una clase Triatleta que implemente ambas interfaces. Finalmente, crea una función que reciba un objeto y verifique si puede nadar, correr o ambos.
 
 ```sql
 interface Nadador {
@@ -649,14 +654,15 @@ fun main() {
     verificarHabilidades(triatleta)
 }
 ```
-## Crea una función literal que calcule el cuadrado de un número y úsala para calcular el cuadrado de 5.
+### Crea una función literal que calcule el cuadrado de un número y úsala para calcular el cuadrado de 5.
+
 ```sql
 val cuadrado = {x: Int -> x * x}
 fun main (){
     println(cuadrado(5))
 }
 ```
-## Función de orden superior personalizada: Crea una función de orden superior llamada aplicarOperacion que tome dos números y una función, y aplique esa función a los números.
+### Función de orden superior personalizada: Crea una función de orden superior llamada aplicarOperacion que tome dos números y una función, y aplique esa función a los números.
 
 ```sql
 fun aplicarOperacion(a: Int, b: Int, operacion: (Int, Int) -> Int): Int{
@@ -667,7 +673,7 @@ fun main(){
     println("Suma: $suma")
 }
 ```
-## Crea una función de orden superior llamada transformarLista que tome una lista de números enteros y una función de transformación. La función debe aplicar la transformación a cada elemento de la lista y devolver una nueva lista con los resultados.
+### Crea una función de orden superior llamada transformarLista que tome una lista de números enteros y una función de transformación. La función debe aplicar la transformación a cada elemento de la lista y devolver una nueva lista con los resultados.
 ```sql
 fun main(){
 fun transformarLista(lista: List<Int>, transformacion: (Int) -> Int): List <Int> {
@@ -691,7 +697,7 @@ fun main() {
     println("El número más grande es: $maximo")
 }
 ```
-## 2. Funciones de Orden Superior
+### 2. Funciones de Orden Superior
 # Crea una función de orden superior llamada operacion que tome dos números enteros y una función como parámetros. Esta función debe aplicar la función recibida a los dos números. Luego, utiliza esta función de orden superior para realizar suma, resta y multiplicación.
 ```sql
 fun operacion(a: Int, b: Int, func: (Int, Int) -> Int): Int {
@@ -713,24 +719,16 @@ fun main() {
 ### 3. Inline Functions
 # Crea una función inline que tome una lambda como parámetro y la ejecute dentro de un bloque try-catch. Luego, usa esta función para ejecutar una operación que podría lanzar una excepción.
 ```sql
-inline fun ejecutarSeguro(operacion: () -> Unit) {
-    try {
-        operacion()
-    } catch (e: Exception) {
-        println("Se produjo una excepción: ${e.message}")
-    }
+inline fun saludar(nombre: String){
+    println("Hola, $nombre")
 }
 
-fun main() {
-    ejecutarSeguro {
-        val resultado = 10 / 0
-        println(resultado)
-    }
     
-    ejecutarSeguro {
-        println("Esta operación es segura")
-    }
+fun main (){
+    println("Hi soy Edgar")
 }
+![image](https://github.com/user-attachments/assets/51f272a5-892c-4a14-aaa3-17095d9a0aee)
+
 
 ```
 ### 4. Filter y Map
